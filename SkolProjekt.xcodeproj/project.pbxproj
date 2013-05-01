@@ -1,0 +1,249 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F729931B17313CCD009D6CCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F729931A17313CCD009D6CCE /* Foundation.framework */; };
+		F729931E17313CCD009D6CCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F729931D17313CCD009D6CCE /* main.m */; };
+		F729932217313CCD009D6CCE /* SkolProjekt.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F729932117313CCD009D6CCE /* SkolProjekt.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F729931517313CCD009D6CCE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				F729932217313CCD009D6CCE /* SkolProjekt.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F729931717313CCD009D6CCE /* SkolProjekt */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SkolProjekt; sourceTree = BUILT_PRODUCTS_DIR; };
+		F729931A17313CCD009D6CCE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F729931D17313CCD009D6CCE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F729932017313CCD009D6CCE /* SkolProjekt-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SkolProjekt-Prefix.pch"; sourceTree = "<group>"; };
+		F729932117313CCD009D6CCE /* SkolProjekt.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = SkolProjekt.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F729931417313CCD009D6CCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F729931B17313CCD009D6CCE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F729930E17313CCD009D6CCE = {
+			isa = PBXGroup;
+			children = (
+				F729931C17313CCD009D6CCE /* SkolProjekt */,
+				F729931917313CCD009D6CCE /* Frameworks */,
+				F729931817313CCD009D6CCE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F729931817313CCD009D6CCE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F729931717313CCD009D6CCE /* SkolProjekt */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F729931917313CCD009D6CCE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F729931A17313CCD009D6CCE /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F729931C17313CCD009D6CCE /* SkolProjekt */ = {
+			isa = PBXGroup;
+			children = (
+				F729931D17313CCD009D6CCE /* main.m */,
+				F729932117313CCD009D6CCE /* SkolProjekt.1 */,
+				F729931F17313CCD009D6CCE /* Supporting Files */,
+			);
+			path = SkolProjekt;
+			sourceTree = "<group>";
+		};
+		F729931F17313CCD009D6CCE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F729932017313CCD009D6CCE /* SkolProjekt-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F729931617313CCD009D6CCE /* SkolProjekt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F729932517313CCD009D6CCE /* Build configuration list for PBXNativeTarget "SkolProjekt" */;
+			buildPhases = (
+				F729931317313CCD009D6CCE /* Sources */,
+				F729931417313CCD009D6CCE /* Frameworks */,
+				F729931517313CCD009D6CCE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkolProjekt;
+			productName = SkolProjekt;
+			productReference = F729931717313CCD009D6CCE /* SkolProjekt */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F729930F17313CCD009D6CCE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Björn Dyvelcrona";
+			};
+			buildConfigurationList = F729931217313CCD009D6CCE /* Build configuration list for PBXProject "SkolProjekt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F729930E17313CCD009D6CCE;
+			productRefGroup = F729931817313CCD009D6CCE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F729931617313CCD009D6CCE /* SkolProjekt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F729931317313CCD009D6CCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F729931E17313CCD009D6CCE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F729932317313CCD009D6CCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F729932417313CCD009D6CCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F729932617313CCD009D6CCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SkolProjekt/SkolProjekt-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F729932717313CCD009D6CCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SkolProjekt/SkolProjekt-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F729931217313CCD009D6CCE /* Build configuration list for PBXProject "SkolProjekt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F729932317313CCD009D6CCE /* Debug */,
+				F729932417313CCD009D6CCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F729932517313CCD009D6CCE /* Build configuration list for PBXNativeTarget "SkolProjekt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F729932617313CCD009D6CCE /* Debug */,
+				F729932717313CCD009D6CCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F729930F17313CCD009D6CCE /* Project object */;
+}
