@@ -10,6 +10,10 @@
 		F729931B17313CCD009D6CCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F729931A17313CCD009D6CCE /* Foundation.framework */; };
 		F729931E17313CCD009D6CCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F729931D17313CCD009D6CCE /* main.m */; };
 		F729932217313CCD009D6CCE /* SkolProjekt.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F729932117313CCD009D6CCE /* SkolProjekt.1 */; };
+		F729932A17313CF7009D6CCE /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = F729932917313CF7009D6CCE /* Student.m */; };
+		F729932D17313D19009D6CCE /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = F729932C17313D19009D6CCE /* Course.m */; };
+		F729933017313D27009D6CCE /* Admin.m in Sources */ = {isa = PBXBuildFile; fileRef = F729932F17313D27009D6CCE /* Admin.m */; };
+		F729933317313D41009D6CCE /* DBconnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F729933217313D41009D6CCE /* DBconnection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +35,14 @@
 		F729931D17313CCD009D6CCE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F729932017313CCD009D6CCE /* SkolProjekt-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SkolProjekt-Prefix.pch"; sourceTree = "<group>"; };
 		F729932117313CCD009D6CCE /* SkolProjekt.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = SkolProjekt.1; sourceTree = "<group>"; };
+		F729932817313CF7009D6CCE /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		F729932917313CF7009D6CCE /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		F729932B17313D19009D6CCE /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		F729932C17313D19009D6CCE /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+		F729932E17313D27009D6CCE /* Admin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Admin.h; sourceTree = "<group>"; };
+		F729932F17313D27009D6CCE /* Admin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Admin.m; sourceTree = "<group>"; };
+		F729933117313D41009D6CCE /* DBconnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBconnection.h; sourceTree = "<group>"; };
+		F729933217313D41009D6CCE /* DBconnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBconnection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,7 @@
 				F729931C17313CCD009D6CCE /* SkolProjekt */,
 				F729931917313CCD009D6CCE /* Frameworks */,
 				F729931817313CCD009D6CCE /* Products */,
+				F729931F17313CCD009D6CCE /* Supporting Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,8 +87,14 @@
 			isa = PBXGroup;
 			children = (
 				F729931D17313CCD009D6CCE /* main.m */,
-				F729932117313CCD009D6CCE /* SkolProjekt.1 */,
-				F729931F17313CCD009D6CCE /* Supporting Files */,
+				F729932817313CF7009D6CCE /* Student.h */,
+				F729932917313CF7009D6CCE /* Student.m */,
+				F729932B17313D19009D6CCE /* Course.h */,
+				F729932C17313D19009D6CCE /* Course.m */,
+				F729932E17313D27009D6CCE /* Admin.h */,
+				F729932F17313D27009D6CCE /* Admin.m */,
+				F729933117313D41009D6CCE /* DBconnection.h */,
+				F729933217313D41009D6CCE /* DBconnection.m */,
 			);
 			path = SkolProjekt;
 			sourceTree = "<group>";
@@ -83,9 +102,11 @@
 		F729931F17313CCD009D6CCE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F729932117313CCD009D6CCE /* SkolProjekt.1 */,
 				F729932017313CCD009D6CCE /* SkolProjekt-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = SkolProjekt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +161,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F729931E17313CCD009D6CCE /* main.m in Sources */,
+				F729932A17313CF7009D6CCE /* Student.m in Sources */,
+				F729932D17313D19009D6CCE /* Course.m in Sources */,
+				F729933017313D27009D6CCE /* Admin.m in Sources */,
+				F729933317313D41009D6CCE /* DBconnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
