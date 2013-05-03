@@ -7,20 +7,24 @@
 //
 
 #import <Foundation/Foundation.h>
-@class Student;
+@class Student;                                                     // Refererar till metoder i header-filen
 @class Course;
 @class Admin;
 
 @interface DBconnection : NSObject
 
--(void) saveStudentToDb:(Student *) student;
+-(void) saveStudentToDb:(Student *) student;                        // Spara student till DB (POST)
 
--(void) getStudentFromDb:(Student *)student;
+-(void) getStudentFromDb:(Student *)student;                        // Hämta student från DB (GET)
 
--(void) saveCourseToDb:(Course *)course;
+-(void) updateStudentFromDb:(Student *)student;                     // Uppdatera student från DB (PUT)
 
--(id) getCourseFromDb:(Course *) course;
+-(void) saveCourseToDb:(Course *)course;                            // Spara klass till DB
 
--(void) saveMessageToDb:(Admin *) message;
+-(id) getCourseFromDb:(Course *) course;                            // Hämta klass från DB
+
+-(void) updateCourseToDb:(Course *)course;                          // Uppdatera klass till DB
+
+-(void) saveMessageToDb:(Admin *) message;                          // Spara meddelande till DB
 
 @end

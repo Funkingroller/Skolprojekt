@@ -11,7 +11,7 @@
 
 @implementation Course
 
-+(id) courseFromJson:(NSDictionary *) courseAsJson
++(id) courseFromJson:(NSDictionary *) courseAsJson                      // En klassmetod som sparar en kurs från Json
 {
     Course *course = [[self alloc]init];
     course.subject = courseAsJson[@"subject"];
@@ -53,7 +53,7 @@
         self.classRoom = classRoom;
         self.notes = notes;
         self.courseStudents = courseStudents;
-        self->_courseId = [[NSUUID UUID] UUIDString];
+        self->__id = [[NSUUID UUID] UUIDString];                            // Skapar ett id som har samma variabelnamn som id i couch
     }
     return self;
 }
@@ -68,7 +68,7 @@
     selfAsJson[@"classRoom"] = self.classRoom;
     selfAsJson[@"notes"] = self.notes;
     selfAsJson[@"courseStudents"] = self.courseStudents;
-    selfAsJson[@"courseId"] = self.courseId;
+    selfAsJson[@"_id"] = self._id;
     
     return selfAsJson;
 }
@@ -81,6 +81,23 @@
         [result addObject:[object jsonValue]];
     }
     return result;                              // returnerar en NSMutableArray
+}
+
+-(NSUInteger) hash                                                  // Skapar ett unikt id med hash
+{
+    return 37 * [self._id hash];
+}
+
+-(BOOL)isEqual:(id)other
+{
+    if (other == self)
+    {
+        return YES;
+    }
+    if (other && [other isMemberOfClass:[self class]]) {
+        return [[other _id] isEqualToString:self._id];
+    }
+    return NO;
 }
 
 @end

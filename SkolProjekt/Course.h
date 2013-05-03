@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@class Student;
+@class Student;                                                         // Refererar till metoder i header-filen
 
 @interface Course : NSObject
 
@@ -18,9 +18,9 @@
 @property (nonatomic, copy) NSString *classRoom;
 @property (nonatomic, copy) NSString *notes;
 @property (nonatomic, copy) NSArray *courseStudents;
-@property (nonatomic, copy, readonly) NSString *courseId;
+@property (nonatomic, copy, readonly) NSString *_id;
 
--(id) initWithSubject:(NSString *) subject
+-(id) initWithSubject:(NSString *) subject                              // Initieringsmallen för en kurs
               teacher:(NSString *) teacher
               weekday:(NSString *) weekday
                  when:(NSString *) when
