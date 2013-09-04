@@ -15,6 +15,16 @@
 		F729933017313D27009D6CCE /* Admin.m in Sources */ = {isa = PBXBuildFile; fileRef = F729932F17313D27009D6CCE /* Admin.m */; };
 		F729933317313D41009D6CCE /* DBconnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F729933217313D41009D6CCE /* DBconnection.m */; };
 		F765498917D4BE1F00321907 /* Schema.m in Sources */ = {isa = PBXBuildFile; fileRef = F765498817D4BE1F00321907 /* Schema.m */; };
+		F7F9ACF017D77061003A3814 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F765499017D765BE00321907 /* SenTestingKit.framework */; };
+		F7F9ACF117D77061003A3814 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F765499217D765BE00321907 /* Cocoa.framework */; };
+		F7F9ACF717D77061003A3814 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7F9ACF517D77061003A3814 /* InfoPlist.strings */; };
+		F7F9ACFA17D77061003A3814 /* SkolProjektTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F9ACF917D77061003A3814 /* SkolProjektTests.m */; };
+		F7F9ACFF17D77069003A3814 /* Schema.m in Sources */ = {isa = PBXBuildFile; fileRef = F765498817D4BE1F00321907 /* Schema.m */; };
+		F7F9AD0017D7706D003A3814 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = F729932917313CF7009D6CCE /* Student.m */; };
+		F7F9AD0117D77073003A3814 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = F729932C17313D19009D6CCE /* Course.m */; };
+		F7F9AD0217D77079003A3814 /* Admin.m in Sources */ = {isa = PBXBuildFile; fileRef = F729932F17313D27009D6CCE /* Admin.m */; };
+		F7F9AD0317D7707D003A3814 /* DBconnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F729933217313D41009D6CCE /* DBconnection.m */; };
+		F7F9AD0417D77085003A3814 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F729931D17313CCD009D6CCE /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +56,17 @@
 		F729933217313D41009D6CCE /* DBconnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBconnection.m; sourceTree = "<group>"; };
 		F765498717D4BE1F00321907 /* Schema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Schema.h; sourceTree = "<group>"; };
 		F765498817D4BE1F00321907 /* Schema.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Schema.m; sourceTree = "<group>"; };
+		F765499017D765BE00321907 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		F765499217D765BE00321907 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		F765499517D765BE00321907 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F765499617D765BE00321907 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F765499717D765BE00321907 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F7F9ACEF17D77061003A3814 /* SkolProjektTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkolProjektTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7F9ACF417D77061003A3814 /* SkolProjektTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SkolProjektTests-Info.plist"; sourceTree = "<group>"; };
+		F7F9ACF617D77061003A3814 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F7F9ACF817D77061003A3814 /* SkolProjektTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkolProjektTests.h; sourceTree = "<group>"; };
+		F7F9ACF917D77061003A3814 /* SkolProjektTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkolProjektTests.m; sourceTree = "<group>"; };
+		F7F9ACFB17D77061003A3814 /* SkolProjektTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SkolProjektTests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +78,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F7F9ACEB17D77061003A3814 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7F9ACF017D77061003A3814 /* SenTestingKit.framework in Frameworks */,
+				F7F9ACF117D77061003A3814 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -64,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				F729931C17313CCD009D6CCE /* SkolProjekt */,
+				F7F9ACF217D77061003A3814 /* SkolProjektTests */,
 				F729931917313CCD009D6CCE /* Frameworks */,
 				F729931817313CCD009D6CCE /* Products */,
 				F729931F17313CCD009D6CCE /* Supporting Files */,
@@ -74,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				F729931717313CCD009D6CCE /* SkolProjekt */,
+				F7F9ACEF17D77061003A3814 /* SkolProjektTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				F729931A17313CCD009D6CCE /* Foundation.framework */,
+				F765499017D765BE00321907 /* SenTestingKit.framework */,
+				F765499217D765BE00321907 /* Cocoa.framework */,
+				F765499417D765BE00321907 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,6 +149,36 @@
 			path = SkolProjekt;
 			sourceTree = "<group>";
 		};
+		F765499417D765BE00321907 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F765499517D765BE00321907 /* AppKit.framework */,
+				F765499617D765BE00321907 /* CoreData.framework */,
+				F765499717D765BE00321907 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F7F9ACF217D77061003A3814 /* SkolProjektTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7F9ACF817D77061003A3814 /* SkolProjektTests.h */,
+				F7F9ACF917D77061003A3814 /* SkolProjektTests.m */,
+				F7F9ACF317D77061003A3814 /* Supporting Files */,
+			);
+			path = SkolProjektTests;
+			sourceTree = "<group>";
+		};
+		F7F9ACF317D77061003A3814 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7F9ACF417D77061003A3814 /* SkolProjektTests-Info.plist */,
+				F7F9ACF517D77061003A3814 /* InfoPlist.strings */,
+				F7F9ACFB17D77061003A3814 /* SkolProjektTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,6 +198,24 @@
 			productName = SkolProjekt;
 			productReference = F729931717313CCD009D6CCE /* SkolProjekt */;
 			productType = "com.apple.product-type.tool";
+		};
+		F7F9ACEE17D77061003A3814 /* SkolProjektTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7F9ACFE17D77061003A3814 /* Build configuration list for PBXNativeTarget "SkolProjektTests" */;
+			buildPhases = (
+				F7F9ACEA17D77061003A3814 /* Sources */,
+				F7F9ACEB17D77061003A3814 /* Frameworks */,
+				F7F9ACEC17D77061003A3814 /* Resources */,
+				F7F9ACED17D77061003A3814 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkolProjektTests;
+			productName = SkolProjektTests;
+			productReference = F7F9ACEF17D77061003A3814 /* SkolProjektTests.octest */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -156,9 +239,37 @@
 			projectRoot = "";
 			targets = (
 				F729931617313CCD009D6CCE /* SkolProjekt */,
+				F7F9ACEE17D77061003A3814 /* SkolProjektTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7F9ACEC17D77061003A3814 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7F9ACF717D77061003A3814 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F7F9ACED17D77061003A3814 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F729931317313CCD009D6CCE /* Sources */ = {
@@ -174,7 +285,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F7F9ACEA17D77061003A3814 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7F9ACFA17D77061003A3814 /* SkolProjektTests.m in Sources */,
+				F7F9ACFF17D77069003A3814 /* Schema.m in Sources */,
+				F7F9AD0017D7706D003A3814 /* Student.m in Sources */,
+				F7F9AD0117D77073003A3814 /* Course.m in Sources */,
+				F7F9AD0217D77079003A3814 /* Admin.m in Sources */,
+				F7F9AD0317D7707D003A3814 /* DBconnection.m in Sources */,
+				F7F9AD0417D77085003A3814 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F7F9ACF517D77061003A3814 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7F9ACF617D77061003A3814 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F729932317313CCD009D6CCE /* Debug */ = {
@@ -254,6 +390,32 @@
 			};
 			name = Release;
 		};
+		F7F9ACFC17D77061003A3814 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SkolProjektTests/SkolProjektTests-Prefix.pch";
+				INFOPLIST_FILE = "SkolProjektTests/SkolProjektTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F7F9ACFD17D77061003A3814 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SkolProjektTests/SkolProjektTests-Prefix.pch";
+				INFOPLIST_FILE = "SkolProjektTests/SkolProjektTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -274,6 +436,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		F7F9ACFE17D77061003A3814 /* Build configuration list for PBXNativeTarget "SkolProjektTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7F9ACFC17D77061003A3814 /* Debug */,
+				F7F9ACFD17D77061003A3814 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

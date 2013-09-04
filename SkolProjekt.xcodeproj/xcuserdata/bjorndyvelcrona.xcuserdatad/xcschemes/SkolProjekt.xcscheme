@@ -20,6 +20,20 @@
                ReferencedContainer = "container:SkolProjekt.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F765498E17D765BE00321907"
+               BuildableName = "SkolprojektTest.octest"
+               BlueprintName = "SkolprojektTest"
+               ReferencedContainer = "container:SkolProjekt.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -28,6 +42,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F7F9ACEE17D77061003A3814"
+               BuildableName = "SkolProjektTests.octest"
+               BlueprintName = "SkolProjektTests"
+               ReferencedContainer = "container:SkolProjekt.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

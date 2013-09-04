@@ -132,16 +132,23 @@ NSMutableArray *allCourses = [NSMutableArray new];
         NSLog(@"%@ %@", weekstringStudent, checkdateStudent);
         for (Course *course in allCourses)
         {
-            NSString *d = [weekFormatter stringFromDate:course.dateStart];
-            NSString *dag = [dayFormatter stringFromDate:course.dateStart];
-            NSString *start = [timeFormatter stringFromDate:course.dateStart];
-            NSString *slut = [timeFormatter stringFromDate:course.dateSlut];
-            if ([weekstring isEqualToString:d]) {
-                NSLog(@"\n \nVecka: %@ \n Lektion: %@ \n Lärare: %@ \n Dag: %@ \n Lektionstid: %@ - %@ \n",d ,course.subject, course.teacher, dag, start, slut);
+                //            perId = course.courseStudents;
+                NSString *d = [weekFormatter stringFromDate:course.dateStart];
+                NSString *dag = [dayFormatter stringFromDate:course.dateStart];
+                NSString *start = [timeFormatter stringFromDate:course.dateStart];
+                NSString *slut = [timeFormatter stringFromDate:course.dateSlut];
+                if ([weekstring isEqualToString:d]) {
+                    for (Course *courseStudents in course) {
+//                        if ([weekstring isEqualToString:d] && [weekstringStudent isEqualToString:courseStudents]) {
+                        NSLog(@"%@", courseStudents);
+                    NSLog(@"\n \nStudent: %@ \n Vecka: %@ \n Lektion: %@ \n Lärare: %@ \n Dag: %@ \n Lektionstid: %@ - %@ \n",course.courseStudents, d ,course.subject, course.teacher, dag, start, slut);
+                    }
+                    }
+
             }
-        }
         
-            
+
+
 
                                       
         
