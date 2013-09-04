@@ -7,25 +7,28 @@
 //
 
 #import "Student.h"
+@class Course;
 
 @implementation Student
 
 -(id) init                                                                  // Initiera en tom student
 {
-    return [self initWithFirstName:@"" lastName:@"" idNumber:@""];
+    return [self initWithFirstName:@"" lastName:@"" personId:@""];
 }
 
 -(id)initWithFirstName:(NSString *) firstName                               // Initiera en student med dessa parametrar
-            lastName:(NSString *) lastName
-             idNumber:(NSString *) idNumber
+              lastName:(NSString *) lastName
+              personId:(NSString *) personId
 {
-    self = [super init];                                                    // self = [super init] is how Objective C invokes the parent's constructor. Self is a reference to the current object.
+    self = [super init];                                                    // self = [super init] is how ObjectiveC
+                                                                            // invokes the parent's constructor.
+                                                                            // Self is a reference to the current object.
     
     if (self) {                                                             // Kollar att self inte är nil.
         self.firstName = firstName;                                         // Lägg till variablerna.
         self.lastName = lastName;
-        self.idNumber = idNumber;
-        
+        self.personId = personId;
+;
     }
     return self;                                                            // Returnera sedan objektet.
 }
@@ -40,12 +43,13 @@
     return message;
 }
 
--(id)jsonValue                                                              // En funktion som skapar ett objekt med variabler i Json-format.
+-(id)jsonValue                                                              // En funktion som skapar ett objekt
+                                                                            // med variabler i Json-format.
 {
     NSMutableDictionary *selfAsJson = [[NSMutableDictionary alloc] init];
     selfAsJson[@"firstName"] = self.firstName;
     selfAsJson[@"lastName"] = self.lastName;
-    selfAsJson[@"idNumber"] = self.idNumber;
+    selfAsJson[@"personId"] = self.personId;
     
     return selfAsJson;                                                      // Den retunerar objektet
 }
@@ -58,6 +62,11 @@
         [result addObject:[object jsonValue]];
     }
     return result;                                                          // returnerar en NSMutableArray
+}
+
+-(void)checkSchemeForDate:(NSDate *)d
+{
+    NSDateFormatter *dFormatter = [[NSDateFormatter alloc] init];
 }
 
 

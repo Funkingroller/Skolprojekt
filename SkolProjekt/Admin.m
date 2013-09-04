@@ -9,6 +9,7 @@
 #import "Admin.h"
 #import "Student.h"
 #import "Course.h"
+#import "Schema.h"
 
 @implementation Admin
 
@@ -30,7 +31,7 @@
 
 -(id)jsonValue
 {
-    NSMutableDictionary *selfAsJson = [[NSMutableDictionary alloc] init];
+    NSMutableDictionary *selfAsJson = [NSMutableDictionary new];
     selfAsJson[@"message"] = self.message;
     
     return selfAsJson;
@@ -38,7 +39,7 @@
 
 -(NSArray *) serializeMessageToJson:(id)objects
 {
-    NSMutableArray *result = [[NSMutableArray alloc] init];
+    NSMutableArray *result = [NSMutableArray new];
     
     for (id object in objects) {
         [result addObject:[object jsonValue]];

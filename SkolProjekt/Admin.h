@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 @class Student;                                         // Importerar klassen Student
 @class Course;                                          // Importerar klassen Course
+@class Schema;
 
 @interface Admin : NSObject
 

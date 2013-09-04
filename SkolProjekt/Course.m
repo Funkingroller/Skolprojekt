@@ -16,8 +16,8 @@
     Course *course = [[self alloc]init];
     course.subject = courseAsJson[@"subject"];
     course.teacher = courseAsJson[@"teacher"];
-    course.weekday = courseAsJson[@"weekday"];
-    course.when = courseAsJson[@"when"];
+    course.dateStart = courseAsJson[@"dateStart"];
+    course.dateSlut = courseAsJson[@"dateSlut"];
     course.classRoom = courseAsJson[@"classRoom"];
     course.notes = courseAsJson[@"notes"];
     course.courseStudents = courseAsJson[@"courseStudents"];
@@ -27,19 +27,27 @@
 
 -(id) init
 {
-        return [self initWithSubject:@""
-                             teacher:@""
-                             weekday:@""
-                                when:@""
-                           classRoom:@""
-                               notes:@""
-                      courseStudents:@[]];
+    NSString *subject = [NSString new];
+    NSString *teacher = [NSString new];
+    NSDate *dateStart = [NSDate new];
+    NSDate *dateSlut = [NSDate new];
+    NSString *classRoom = [NSString new];
+    NSString *notes = [NSString new];
+    NSMutableArray *courseStudents = [NSMutableArray new];
+    
+        return [self initWithSubject:subject
+                             teacher:teacher
+                           dateStart:dateStart
+                            dateSlut:dateSlut
+                           classRoom:classRoom
+                               notes:notes
+                      courseStudents:courseStudents];
 }
 
 -(id) initWithSubject:(NSString *)subject
               teacher:(NSString *)teacher
-              weekday:(NSString *)weekday
-                 when:(NSString *)when
+            dateStart:(NSDate *)dateStart
+             dateSlut:(NSDate *)dateSlut
             classRoom:(NSString *)classRoom
                 notes:(NSString *)notes
        courseStudents:(NSArray *)courseStudents
@@ -48,12 +56,12 @@
     if (self) {
         self.subject = subject;
         self.teacher = teacher;
-        self.weekday = weekday;
-        self.when = when;
+        self.dateStart = dateStart;
+        self.dateSlut = dateSlut;
         self.classRoom = classRoom;
         self.notes = notes;
         self.courseStudents = courseStudents;
-        self->__id = [[NSUUID UUID] UUIDString];                            // Skapar ett id som har samma variabelnamn som id i couch
+        self->__id = [[NSUUID UUID] UUIDString];                 // Skapar ett id som har samma variabelnamn som id i couch
     }
     return self;
 }
@@ -63,8 +71,8 @@
     NSMutableDictionary *selfAsJson = [[NSMutableDictionary alloc]init];
     selfAsJson[@"subject"] = self.subject;
     selfAsJson[@"teacher"] = self.teacher;
-    selfAsJson[@"weekday"] = self.weekday;
-    selfAsJson[@"when"] = self.when;
+    selfAsJson[@"dateStart"] = [NSString stringWithFormat:@"%@",self.dateStart];
+    selfAsJson[@"dateSlut"] = [NSString stringWithFormat:@"%@",self.dateSlut];
     selfAsJson[@"classRoom"] = self.classRoom;
     selfAsJson[@"notes"] = self.notes;
     selfAsJson[@"courseStudents"] = self.courseStudents;
@@ -80,7 +88,7 @@
     for (id object in objects) {
         [result addObject:[object jsonValue]];
     }
-    return result;                              // returnerar en NSMutableArray
+    return result;                                                  // returnerar en NSMutableArray
 }
 
 -(NSUInteger) hash                                                  // Skapar ett unikt id med hash
@@ -99,5 +107,29 @@
     }
     return NO;
 }
+
+//-(void)allaKurser:(NSDate *) ak
+//{
+//NSMutableArray *allCourses = [NSMutableArray new];
+//[allCourses addObject:course1];
+//[allCourses addObject:course2];
+//[allCourses addObject:course3];
+//[allCourses addObject:course4];
+//[allCourses addObject:course5];
+//
+//NSString *weekstring = [[NSString alloc]init];
+//NSDateFormatter *weekFormatter = [[NSDateFormatter alloc] init];
+//[weekFormatter setDateFormat: @"w"];
+//NSDate *checkdate = [weekFormatter dateFromString:weekstring];
+//NSLog(@"%@ %@", weekstring, checkdate);
+//for (Course *course in allCourses)
+//{
+//    NSString *d = [weekFormatter stringFromDate:course.dateStart];
+//    if (weekstring == d) {
+//        NSLog(@"%@",course.subject);
+//    }
+//}
+//}
+
 
 @end

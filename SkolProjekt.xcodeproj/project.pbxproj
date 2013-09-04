@@ -14,6 +14,7 @@
 		F729932D17313D19009D6CCE /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = F729932C17313D19009D6CCE /* Course.m */; };
 		F729933017313D27009D6CCE /* Admin.m in Sources */ = {isa = PBXBuildFile; fileRef = F729932F17313D27009D6CCE /* Admin.m */; };
 		F729933317313D41009D6CCE /* DBconnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F729933217313D41009D6CCE /* DBconnection.m */; };
+		F765498917D4BE1F00321907 /* Schema.m in Sources */ = {isa = PBXBuildFile; fileRef = F765498817D4BE1F00321907 /* Schema.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,8 @@
 		F729932F17313D27009D6CCE /* Admin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Admin.m; sourceTree = "<group>"; };
 		F729933117313D41009D6CCE /* DBconnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBconnection.h; sourceTree = "<group>"; };
 		F729933217313D41009D6CCE /* DBconnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBconnection.m; sourceTree = "<group>"; };
+		F765498717D4BE1F00321907 /* Schema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Schema.h; sourceTree = "<group>"; };
+		F765498817D4BE1F00321907 /* Schema.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Schema.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				F729931D17313CCD009D6CCE /* main.m */,
+				F765498717D4BE1F00321907 /* Schema.h */,
+				F765498817D4BE1F00321907 /* Schema.m */,
 				F729932817313CF7009D6CCE /* Student.h */,
 				F729932917313CF7009D6CCE /* Student.m */,
 				F729932B17313D19009D6CCE /* Course.h */,
@@ -165,6 +170,7 @@
 				F729932D17313D19009D6CCE /* Course.m in Sources */,
 				F729933017313D27009D6CCE /* Admin.m in Sources */,
 				F729933317313D41009D6CCE /* DBconnection.m in Sources */,
+				F765498917D4BE1F00321907 /* Schema.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +273,7 @@
 				F729932717313CCD009D6CCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

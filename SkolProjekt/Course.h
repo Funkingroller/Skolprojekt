@@ -13,8 +13,10 @@
 
 @property (nonatomic, copy) NSString *subject;
 @property (nonatomic, copy) NSString *teacher;
-@property (nonatomic, copy) NSString *weekday;
-@property (nonatomic, copy) NSString *when;
+//@property (nonatomic, copy) NSString *weekday;
+//@property (nonatomic, copy) NSString *when;
+@property (nonatomic, copy) NSDate *dateStart;
+@property (nonatomic, copy) NSDate *dateSlut;
 @property (nonatomic, copy) NSString *classRoom;
 @property (nonatomic, copy) NSString *notes;
 @property (nonatomic, copy) NSArray *courseStudents;
@@ -22,8 +24,8 @@
 
 -(id) initWithSubject:(NSString *) subject                              // Initieringsmallen för en kurs
               teacher:(NSString *) teacher
-              weekday:(NSString *) weekday
-                 when:(NSString *) when
+            dateStart:(NSDate *) dateStart
+             dateSlut:(NSDate *) dateSlut
             classRoom:(NSString *) classRoom
                 notes:(NSString *) notes
        courseStudents:(NSArray *) courseStudents;
