@@ -375,6 +375,10 @@
 		F729932617313CCD009D6CCE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SkolProjekt/SkolProjekt-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -384,6 +388,10 @@
 		F729932717313CCD009D6CCE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SkolProjekt/SkolProjekt-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";

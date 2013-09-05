@@ -29,4 +29,5 @@
     STFail(@"Unit tests are not implemented yet in SkolProjektTests");
 }
 
+-(void) testInitWithMessageToAll
 @end
