@@ -20,7 +20,7 @@
 -(id) initWithMessage:(NSString *) message              // Meddelande till specifik student
             toStudent:(Student *) student;
 
--(id)jsonValue;
+-(id) jsonValue;
 
 -(NSArray *) serializeMessageToJson:(id) objects;
 

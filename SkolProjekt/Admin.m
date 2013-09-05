@@ -19,8 +19,9 @@
     return self;
 }
 
+
 -(id) initWithMessage:(NSString *) message
-            toStudent:(Student *)student;
+            toStudent:(Student *) student;
 {
     self = [super init];
     if (self) {
@@ -29,7 +30,8 @@
     return self;
 }
 
--(id)jsonValue
+
+-(id) jsonValue
 {
     NSMutableDictionary *selfAsJson = [NSMutableDictionary new];
     selfAsJson[@"message"] = self.message;
@@ -37,7 +39,8 @@
     return selfAsJson;
 }
 
--(NSArray *) serializeMessageToJson:(id)objects
+
+-(NSArray *) serializeMessageToJson:(id) objects
 {
     NSMutableArray *result = [NSMutableArray new];
     

@@ -95,12 +95,15 @@ int main(int argc, const char * argv[])
                                                     notes:@"Vi ska göra pannkakor..."
                                            courseStudents:@[student1.firstName, student2.firstName, student3.firstName]];
 
+
+#pragma mark - Gör en array av alla kurser        
 NSMutableArray *allCourses = [NSMutableArray new];
                                       [allCourses addObject:course1];
                                       [allCourses addObject:course2];
                                       [allCourses addObject:course3];
                                       [allCourses addObject:course4];
                                       [allCourses addObject:course5];
+
 
 #pragma mark - Alla kurser en vecka
         NSString *weekstring = [[NSString alloc]init];
@@ -151,48 +154,48 @@ NSMutableArray *allCourses = [NSMutableArray new];
 
 
                                       
-        
-//        NSLog(@"\n Course1 id: %@, \n %@, \n %@, \n %@, \n %@, \n %@, \n %@, \n %@, \n Course2 id: %@, \n %@, \n %@, \n %@, \n %@, \n %@, \n %@, \n %@,\n Course3 id: %@, \n %@, \n %@, \n %@, \n %@, \n %@, \n %@, \n %@,\n Course4 id: %@, \n %@, \n %@, \n %@, \n %@, \n %@, \n %@, \n %@,\n Course5 id: %@, \n %@, \n %@, \n %@, \n %@, \n %@, \n %@, \n %@",
-//              course1._id,
-//              course1.subject,
-//              course1.teacher,
-//              course1.dateStart,
-//              course1.dateSlut,
-//              course1.classRoom,
-//              course1.notes,
-//              course1.courseStudents,
-//              course2._id,
-//              course2.subject,
-//              course2.teacher,
-//              course2.dateStart,
-//              course2.dateSlut,
-//              course2.classRoom,
-//              course2.notes,
-//              course2.courseStudents,
-//              course3._id,
-//              course3.subject,
-//              course3.teacher,
-//              course3.dateStart,
-//              course3.dateSlut,
-//              course3.classRoom,
-//              course3.notes,
-//              course3.courseStudents,
-//              course4._id,
-//              course4.subject,
-//              course4.teacher,
-//              course4.dateStart,
-//              course4.dateSlut,
-//              course4.classRoom,
-//              course4.notes,
-//              course4.courseStudents,
-//              course5._id,
-//              course5.subject,
-//              course5.teacher,
-//              course5.dateStart,
-//              course5.dateSlut,
-//              course5.classRoom,
-//              course5.notes,
-//              course5.courseStudents);
+#pragma mark - Skriver ut inlagda kurser        
+        NSLog(@"\n\n\n    Course1 id:   %@ \n       Lektion:   %@ \n        Lärare:   %@ \n Lektionsstart:   %@ \n  Lektionsslut:   %@ \n           Sal:   %@ \n      Aktuellt:   %@ \n %@ \n\n    Course2 id:   %@ \n       Lektion:   %@ \n        Lärare:   %@ \n Lektionsstart:   %@ \n  Lektionsslut:   %@ \n           Sal:   %@ \n      Aktuellt:   %@ \n %@ \n\n    Course3 id:   %@ \n       Lektion:   %@ \n        Lärare:   %@ \n Lektionsstart:   %@ \n  Lektionsslut:   %@ \n           Sal:   %@ \n      Aktuellt:   %@ \n %@ \n\n    Course4 id:   %@ \n       Lektion:   %@ \n        Lärare:   %@ \n Lektionsstart:   %@ \n  Lektionsslut:   %@ \n           Sal:   %@ \n      Aktuellt:   %@ \n %@ \n\n    Course5 id:   %@ \n       Lektion:   %@ \n        Lärare:   %@ \n Lektionsstart:   %@ \n  Lektionsslut:   %@ \n           Sal:   %@ \n      Aktuellt:   %@ \n %@  \n\n\n",
+              course1._id,
+              course1.subject,
+              course1.teacher,
+              course1.dateStart,
+              course1.dateSlut,
+              course1.classRoom,
+              course1.notes,
+              course1.courseStudents,
+              course2._id,
+              course2.subject,
+              course2.teacher,
+              course2.dateStart,
+              course2.dateSlut,
+              course2.classRoom,
+              course2.notes,
+              course2.courseStudents,
+              course3._id,
+              course3.subject,
+              course3.teacher,
+              course3.dateStart,
+              course3.dateSlut,
+              course3.classRoom,
+              course3.notes,
+              course3.courseStudents,
+              course4._id,
+              course4.subject,
+              course4.teacher,
+              course4.dateStart,
+              course4.dateSlut,
+              course4.classRoom,
+              course4.notes,
+              course4.courseStudents,
+              course5._id,
+              course5.subject,
+              course5.teacher,
+              course5.dateStart,
+              course5.dateSlut,
+              course5.classRoom,
+              course5.notes,
+              course5.courseStudents);
         
         
         

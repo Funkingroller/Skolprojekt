@@ -103,10 +103,6 @@
                                                         thust be discarded).
                                                         */
 
-//    NSLog(@"asdata: %@", asData);
-//    NSLog(@"mystring: %@", myString);
-//    NSLog(@"request: %@", request);
-
 }
 
     
@@ -136,7 +132,7 @@
     __unused NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request
                                                                           delegate:nil];
 
-    NSLog(@"Student:%@", [[NSString alloc]initWithData:asData encoding:NSUTF8StringEncoding]);
+//    NSLog(@"Student:%@", [[NSString alloc]initWithData:asData encoding:NSUTF8StringEncoding]);
 }
 
 

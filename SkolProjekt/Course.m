@@ -44,6 +44,7 @@
                       courseStudents:courseStudents];
 }
 
+
 -(id) initWithSubject:(NSString *)subject
               teacher:(NSString *)teacher
             dateStart:(NSDate *)dateStart
@@ -107,29 +108,5 @@
     }
     return NO;
 }
-
-//-(void)allaKurser:(NSDate *) ak
-//{
-//NSMutableArray *allCourses = [NSMutableArray new];
-//[allCourses addObject:course1];
-//[allCourses addObject:course2];
-//[allCourses addObject:course3];
-//[allCourses addObject:course4];
-//[allCourses addObject:course5];
-//
-//NSString *weekstring = [[NSString alloc]init];
-//NSDateFormatter *weekFormatter = [[NSDateFormatter alloc] init];
-//[weekFormatter setDateFormat: @"w"];
-//NSDate *checkdate = [weekFormatter dateFromString:weekstring];
-//NSLog(@"%@ %@", weekstring, checkdate);
-//for (Course *course in allCourses)
-//{
-//    NSString *d = [weekFormatter stringFromDate:course.dateStart];
-//    if (weekstring == d) {
-//        NSLog(@"%@",course.subject);
-//    }
-//}
-//}
-
 
 @end
