@@ -21,17 +21,13 @@
 -(void) saveStudentToDb:(Student *) student;                        // Spara student till DB (POST)
 
 -(void) getStudentFromDb:(Student *)student;                        // Hämta student från DB (GET)
-//
-//-(void) updateStudentFromDb:(Student *)student;                     // Uppdatera student från DB (PUT)
 
--(void) saveCourseToDb:(Course *)course;                            // Spara klass till DB
+- (NSString *) getStudentFromDbStr:(NSString *) url;
+
+-(void) saveCourseToDb:(Course *) course;                            // Spara klass till DB
 
 -(id) getCourseFromDb:(Course *) course;                            // Hämta klass från DB
 
--(void) updateCourseToDb:(Course *)course;                          // Uppdatera klass till DB
-
 -(void) saveMessageToDb:(Admin *) message;                          // Spara meddelande till DB
-
-- (void) getDataFrom:(NSString *)url;
 
 @end

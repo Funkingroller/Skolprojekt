@@ -7,7 +7,20 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
+#import "Schema.h"
+#import "Student.h"
+#import "Course.h"
+#import "Admin.h"
+#import "DBconnection.h"
 
 @interface SkolProjektTests : SenTestCase
+{
+    Schema *samling;
+    Student *elev;
+    Course *kurs;
+    Admin *adm;
+    DBconnection *couch;
+    
+}
 
 @end

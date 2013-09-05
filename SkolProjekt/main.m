@@ -125,28 +125,28 @@ NSMutableArray *allCourses = [NSMutableArray new];
         }
         
 #pragma mark - Alla kurser en vecka för en student
-        NSString *weekstringStudent = [[NSString alloc]init];
-        weekstringStudent = @"37";
-        NSString *perId = @"400901-4634";
-        NSDate *checkdateStudent = [weekFormatter dateFromString:weekstringStudent];
-        NSLog(@"%@ %@", weekstringStudent, checkdateStudent);
-        for (Course *course in allCourses)
-        {
-                //            perId = course.courseStudents;
-                NSString *d = [weekFormatter stringFromDate:course.dateStart];
-                NSString *dag = [dayFormatter stringFromDate:course.dateStart];
-                NSString *start = [timeFormatter stringFromDate:course.dateStart];
-                NSString *slut = [timeFormatter stringFromDate:course.dateSlut];
-                if ([weekstring isEqualToString:d]) {
-                    for (Course *courseStudents in course) {
-//                        if ([weekstring isEqualToString:d] && [weekstringStudent isEqualToString:courseStudents]) {
-                        NSLog(@"%@", courseStudents);
-                    NSLog(@"\n \nStudent: %@ \n Vecka: %@ \n Lektion: %@ \n Lärare: %@ \n Dag: %@ \n Lektionstid: %@ - %@ \n",course.courseStudents, d ,course.subject, course.teacher, dag, start, slut);
-                    }
-                    }
-
-            }
-        
+//        NSString *weekstringStudent = [[NSString alloc]init];
+//        weekstringStudent = @"37";
+////        NSString *perId = @"400901-4634";
+//        NSDate *checkdateStudent = [weekFormatter dateFromString:weekstringStudent];
+//        NSLog(@"%@ %@", weekstringStudent, checkdateStudent);
+//        for (Course *course in allCourses)
+//        {
+//                //            perId = course.courseStudents;
+//                NSString *d = [weekFormatter stringFromDate:course.dateStart];
+//                NSString *dag = [dayFormatter stringFromDate:course.dateStart];
+//                NSString *start = [timeFormatter stringFromDate:course.dateStart];
+//                NSString *slut = [timeFormatter stringFromDate:course.dateSlut];
+//                if ([weekstring isEqualToString:d]) {
+//                    for (Course *courseStudents in course) {
+////                        if ([weekstring isEqualToString:d] && [weekstringStudent isEqualToString:courseStudents]) {
+//                        NSLog(@"%@", courseStudents);
+//                    NSLog(@"\n \nStudent: %@ \n Vecka: %@ \n Lektion: %@ \n Lärare: %@ \n Dag: %@ \n Lektionstid: %@ - %@ \n",course.courseStudents, d ,course.subject, course.teacher, dag, start, slut);
+//                    }
+//                    }
+//
+//            }
+//        
 
 
 

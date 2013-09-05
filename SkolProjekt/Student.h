@@ -43,9 +43,4 @@
 
 -(id) allStudentsGetMessage:(Admin *) message;      // Man kan skicka eddelanden till alla om man är av klassen Admin.
 
--(void)checkSchemeForDate:(NSDate *) d;
-
--(void) showLessonsForWeek: (NSString *) weekstring;
-
-
 @end

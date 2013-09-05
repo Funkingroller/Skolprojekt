@@ -11,7 +11,7 @@
 
 @implementation Student
 
--(id) init                                                                  // Initiera en tom student
+-(id)init                                                                  // Initiera en tom student
 {
     return [self initWithFirstName:@"" lastName:@"" personId:@""];
 }
@@ -33,18 +33,17 @@
     return self;                                                            // Returnera sedan objektet.
 }
 
--(id)studentGetMessage:(Admin *)message
+-(id)studentGetMessage:(Admin *) message
 {
     return message;
 }
 
--(id)allStudentsGetMessage:(Admin *)message
+-(id)allStudentsGetMessage:(Admin *) message
 {
     return message;
 }
 
--(id)jsonValue                                                              // En funktion som skapar ett objekt
-                                                                            // med variabler i Json-format.
+-(id)jsonValue                                      // En funktion som skapar ett objekt med variabler i Json-format.
 {
     NSMutableDictionary *selfAsJson = [[NSMutableDictionary alloc] init];
     selfAsJson[@"firstName"] = self.firstName;
@@ -54,7 +53,7 @@
     return selfAsJson;                                                      // Den retunerar objektet
 }
 
--(NSArray *)serializeStudentToJson:(id)objects                              // Omvandlar en student till Json.
+-(NSArray *)serializeStudentToJson:(id) objects                              // Omvandlar en student till Json.
 {
     NSMutableArray *result = [[NSMutableArray alloc] init];
     
@@ -63,12 +62,5 @@
     }
     return result;                                                          // returnerar en NSMutableArray
 }
-
--(void)checkSchemeForDate:(NSDate *)d
-{
-    NSDateFormatter *dFormatter = [[NSDateFormatter alloc] init];
-}
-
-
 
 @end

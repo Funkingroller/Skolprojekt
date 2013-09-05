@@ -140,7 +140,8 @@
 }
 
 
-- (NSString *) getStudentFromDbStr:(NSString *)url{                                                 // Test
+- (NSString *) getStudentFromDbStr:(NSString *) url
+{                                                                                   // Test
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     [request setHTTPMethod:@"GET"];
     url = [NSURL URLWithString:@"http://funking.iriscouch.com/student_db/_id=0052a55aa2628605ab9ae2f26100125a"];
@@ -166,12 +167,6 @@
 //    NSString *ret = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
 //    NSLog(@"ret: %@", ret);
 }
-
-
-//-(void)updateStudentFromDb:(Student *)student
-//{
-
-//}
 
 
 -(void) saveCourseToDb:(Course *) course
@@ -233,12 +228,6 @@
 //                                             encoding:NSUTF8StringEncoding]);
     
     return asData;
-}
-
-
--(void)updateCourseToDb:(Course *)course
-{
-    
 }
 
 
